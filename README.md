@@ -36,6 +36,7 @@ candidates = s.suggest('telepone')
 puts candidates.to_s
 ```
 
+The sqlite3 table should have at least a "word" and "id" table, where word is a unique word in the lexicon, and id is a primary key.
 ## Contributing
 
 1. Fork it
