@@ -1,12 +1,12 @@
+require 'segments_lexicon'
 require "segments/version"
-#require 'segments_lexicon'
 require "segments/candidates"
 require 'segments/substring_rules'
 
 class Segments
   # Initializes with a segments lexicon
   def initialize(segments_lexicon)
-    @lex = lexicon
+    @lex = segments_lexicon
   end
 
   # Returns the query_term broken down into
@@ -36,13 +36,14 @@ class Segments
     # Check confidence
     #   Run ngrams
     # Return most confident candidate set
+    return @candidates
   end
 
   private #------
 
   def found(result)
-    word = result[:word]
-    id   = result[:id]
+    word = result["word"]
+    id   = result["id"]
     if @candidates.has_id?(id)
       @candidates.vote_for(id, 1.0)
     else

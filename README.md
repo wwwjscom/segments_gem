@@ -18,7 +18,23 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Example:
+
+```
+require 'segments'
+
+# Setup the lexicon
+db_path = '/tmp/foo.sqlite3'
+table_name = 'lexicon'
+lex = SegmentsLexicon.new(db_path, table_name)
+
+# Setup segments
+s = Segments.new(lex)
+
+# Search
+candidates = s.suggest('telepone')
+puts candidates.to_s
+```
 
 ## Contributing
 

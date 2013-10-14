@@ -56,9 +56,10 @@ class Candidates
 		s = ''
 		unless @candidates == nil
 			@candidates.each do |c|
-				s += "[#{c.id}, #{c.misspelled}, #{c.solution}, #{c.votes}], "
+				s += "[#{c.id}, #{c.misspelled}, #{c.solution}, #{c.votes}]\n"
 			end
 		end
+    return s
 	end
 end
 
