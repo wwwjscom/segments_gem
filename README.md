@@ -37,6 +37,14 @@ puts candidates.to_s
 ```
 
 The sqlite3 table should have at least a "word" and "id" table, where word is a unique word in the lexicon, and id is a primary key.
+
+To create the table/insert, use this sql:
+
+```
+create table lexicon(id integer primary key, word text);
+insert into lexicon(word) VALUES('telephone');
+```
+
 ## Contributing
 
 1. Fork it
