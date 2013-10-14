@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'segments/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "segments"
+  gem.name          = "my_segments"
   gem.version       = Segments::VERSION
   gem.authors       = ["Jason Soo"]
   gem.email         = ["wwwjscom@gmail.com"]

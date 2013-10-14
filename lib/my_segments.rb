@@ -1,7 +1,7 @@
 require 'segments_lexicon'
-require "segments/version"
-require "segments/candidates"
-require 'segments/substring_rules'
+require "my_segments/version"
+require "my_segments/candidates"
+require 'my_segments/substring_rules'
 
 class Segments
   # Initializes with a segments lexicon
