@@ -6,7 +6,7 @@ TODO: Write a gem description
 
 Add this line to your application's Gemfile:
 
-    gem 'segments'
+    gem 'my_segments'
 
 And then execute:
 
@@ -14,14 +14,14 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install segments
+    $ gem install my_segments
 
 ## Usage
 
 Example:
 
 ```
-require 'segments'
+require 'my_segments'
 
 # Setup the lexicon
 db_path = '/tmp/foo.sqlite3'
